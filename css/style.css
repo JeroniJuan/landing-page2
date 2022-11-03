@@ -55,12 +55,21 @@ header>:nth-child(2) {
     margin-left:70px;
     margin-top:-25px;
 }
-
-.menu {
+@media screen and (min-width:370px) {
+   .menu {
     text-align: center;
     margin-top:50px;
     margin-left:-230px;
+} 
 }
+
+@media screen and (min-width:1000px) {
+    .menu {
+     text-align: center;
+     margin-top:0px;
+     margin-left:0px;
+ } 
+ }
 
 .menu a {
     padding: 0 15px;
@@ -155,7 +164,7 @@ header>:nth-child(2) {
 
 @media screen and (min-width:370px) {
     .green-container {
-        width: 0px;
+        width: 700px;
         height: 76px;
         background-color: rgba(66, 255, 0, 0.2);
         margin-top: 270px;
@@ -183,6 +192,7 @@ i:hover {
     .body-left {
        width: 100%;
        height: 915px;
+       flex-direction:column;
    }   
    .body-left h1{
     font-size:25px;
@@ -223,13 +233,14 @@ i:hover {
 
 @media screen and (min-width:370px) {
     .body-right {
-        width:0%;
+        width:100%;
         height: 915px;
         background-image: url('../assets/imgs/body.png');
         background-size:cover;
         background-position: top;
         background-position-x:-100px;
         background-repeat:no-repeat;
+        flex-direction: column;
     }
     }
 
@@ -252,14 +263,17 @@ i:hover {
         background-position: center;
         margin: 5px;
     }
-    a {
+    .social-net a {
         height:20px;
         width: 370px;
+        margin:10px;
     }
     .social-net {
-        margin-top: 20px;
-        height:20px;
+        margin-top: -180px;
+        margin-left:80%;
+        height:8px;
         width:300px;
+        flex-direction:column;
     }
 }
 
@@ -275,5 +289,7 @@ i:hover {
     }
     .social-net {
         margin-top: 100px;
+        flex-direction:row;
+        margin-left:0%;
     }
 }
